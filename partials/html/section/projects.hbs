@@ -14,7 +14,7 @@
     {{ title }}
     {{/if}}
     </h3>
-    {{#if start}}<span class="tenure">{{dateRange . 'MMM --- YYYY'}}</span>{{/if}}
+    {{#if start}}<span class="tenure">{{dateRange . 'MMM YYYY'}}</span>{{/if}}
     {{{ summary }}}
     {{> highlights }}
     {{#if keywords}}<span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>{{/if}}

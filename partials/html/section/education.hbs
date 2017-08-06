@@ -8,7 +8,7 @@
     {{#> body-education }}
     <div>
       <h3>{{#if title}}<em>{{{ title }}}</em>, {{/if}}{{{ institution }}}</h3>
-      <span class="tenure">{{dateRange .}}</span>
+      <span class="tenure">{{dateRange . 'MMM YYYY'}}</span>
       {{{ summary }}}
       {{> highlights }}
       {{#if curriculum}}<span class="keywords">{{#each curriculum}}{{{ . }}} {{/each}}</span>{{/if}}
