@@ -11,7 +11,7 @@
       <span class="tenure">{{dateRange . 'MMM YYYY'}}</span>
       {{{ summary }}}
       {{> highlights }}
-      {{#if curriculum}}<span class="keywords">{{#each curriculum}}{{{ . }}} {{/each}}</span>{{/if}}
+      {{#if curriculum}}<span class="keywords">{{#each curriculum}}<span class="keyword">{{{ . }}}</span> {{/each}}</span>{{/if}}
     </div>
     {{/body-education}}
   {{/each}}
