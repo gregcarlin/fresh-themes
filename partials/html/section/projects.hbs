@@ -8,11 +8,13 @@
     {{#> body-projects }}
     <div>
     <h3>{{#if role}}<em>{{camelCase role }}</em>,{{/if}}
-    {{#if url}}
-    <a href="{{{ url }}}">{{ title }}</a>
-    {{else}}
-    {{ title }}
-    {{/if}}
+    <strong>
+      {{#if url}}
+      <a href="{{{ url }}}">{{ title }}</a>
+      {{else}}
+      {{ title }}
+      {{/if}}
+    </strong>
     </h3>
     {{#if start}}<span class="tenure">{{dateRange . 'MMM YYYY'}}</span>{{/if}}
     {{{ summary }}}

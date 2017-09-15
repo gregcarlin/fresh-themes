@@ -9,11 +9,13 @@
     {{#> body-employment }}
     <div>
       <h3><em>{{ position }}</em>,
-        {{#if url }}
-        <a href="{{{ url }}}">{{ employer }}</a>
-        {{else}}
-        {{ employer }}
-        {{/if}}
+        <strong>
+          {{#if url }}
+          <a href="{{{ url }}}">{{ employer }}</a>
+          {{else}}
+          {{ employer }}
+          {{/if}}
+        </strong>
         </h3>
         <span class="tenure">{{dateRange . 'MMM YYYY'}}</span>
       <p>{{{ summary }}}</p>
