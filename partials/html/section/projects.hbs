@@ -17,9 +17,9 @@
     </strong>
     </h3>
     {{#if start}}<span class="tenure">{{dateRange . 'MMM YYYY'}}</span>{{/if}}
+    {{#if keywords}}<span class="keywords">{{#each keywords}}<span class="keyword">{{{ . }}}</span> {{/each}}</span>{{/if}}
     {{{ summary }}}
     {{> highlights }}
-    {{#if keywords}}<span class="keywords">{{#each keywords}}<span class="keyword">{{{ . }}}</span> {{/each}}</span>{{/if}}
     </div>
     {{/body-projects }}
   {{/each}}
